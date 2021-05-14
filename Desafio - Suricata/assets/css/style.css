@@ -1,0 +1,43 @@
+
+section, footer{
+    text-align: center;
+}
+
+.navbar {
+  background-color: #e83e8c;
+}
+
+.tarjetas {
+    text-align: left;
+}
+
+
+.tarjeta{
+    padding:16px;
+}
+
+.tarjeta img {
+    max-width: 100%;
+}
+
+
+
+.icons-section{
+    text-align: center;
+    background: #17A2B8;
+    color:white;
+    padding: 64px auto;
+}
+
+.icons-section span{
+    font-size: 32px;
+    font-weight: bold;
+    
+}
+footer{
+    padding: 48px;
+    color: #aaa;
+    background: #e83e8c;
+    height: 184px;
+}
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafío Ricomida</title>
+  <!--Bootstrap 4.5.3-beta3 CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!--Font Awesome 5.15.1-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- nav -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo-ricomida.png" alt="logo1" width="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav  mr-auto">
+
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- header carrusel? -->
+
+  <header>
+    <div class="container p-3">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <img src="assets/img/principal.jpg" alt="principal" style="width:100%">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <h2>PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h2>
+          <hr>
+          <p>110 MIN / 6 A 8 PORCIONES</p>
+          <button id="boton1" class="btn-light rounded-lg" data-toggle="tooltip" data-placement="bottom"
+            title="Presiona para enviar a tu correo">Enviar por correo</button>
+          <button class="btn-light rounded-lg" data-toggle="tooltip" data-placement="right"
+            title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="container d-none d-sm-none d-md-block d-lg-block d-xl-block ">
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-multi-item" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
+
+      </ol>
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-lg-3 col-md-3">
+              <img src="assets/img/slider-1.png" class="d-block w-100" alt="slider1">
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <img src="assets/img/slider-2.png" class="d-block w-100" alt="slider1">
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <img src="assets/img/slider-3.png" class="d-block w-100" alt="slider1">
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <img src="assets/img/slider-4.png" class="d-block w-100" alt="slider1">
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-3 col-md-3">
+              <img src="assets/img/slider-2.png" class="d-block w-100" alt="slider1">
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <img src="assets/img/slider-3.png" class="d-block w-100" alt="slider1">
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <img src="assets/img/slider-4.png" class="d-block w-100" alt="slider1">
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <img src="assets/img/slider-1.png" class="d-block w-100" alt="slider1">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+ 
+  <section>
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <h3>INGREDIENTES</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, minus. Totam quisquam eos repellat et
+            debitis sequi minima earum, facere modi sed incidunt illo impedit placeat nam fuga itaque dignissimos?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, minus. Totam quisquam eos repellat et
+            debitis sequi minima earum, facere modi sed incidunt illo impedit placeat nam fuga itaque dignissimos?</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <h3>PREPARACIÓN</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi eaque vitae, atque harum,
+            officiis inventore minus repellendus voluptatem error fuga. Magni dolor fuga, vero repellendus nesciunt
+            eius?
+            Voluptate, sunt?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi eaque vitae, atque harum,
+            officiis inventore minus repellendus voluptatem error fuga. Magni dolor fuga, vero repellendus nesciunt
+            eius?
+            Voluptate, sunt?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi eaque vitae, atque harum,
+            officiis inventore minus repellendus voluptatem error fuga. Magni dolor fuga, vero repellendus nesciunt
+            eius?
+            Voluptate, sunt?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi eaque vitae, atque harum,
+            officiis inventore minus repellendus voluptatem error fuga. Magni dolor fuga, vero repellendus nesciunt
+            eius?
+            Voluptate, sunt?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis excepturi eaque vitae, atque harum,
+            officiis inventore minus repellendus voluptatem error fuga. Magni dolor fuga, vero repellendus nesciunt
+            eius?
+            Voluptate, sunt?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <!-- section cards -->
+  <section class="container">
+    <h2 class="text-center">RECETAS RELACIONADAS</h2>
+
+    <div id="cards">
+      <div class="row">
+        <div class="col-lg-4  col-md-4  col-sm-12">
+          <div class="card m-2">
+            <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="">
+            <h5>PANQUEQUE CON MANJAR Y CREMA</h5>
+            <p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo voluptates reprehenderit
+              facilis porro! Incidunt tempora aut aperiam aliquid et dolorum magnam similique numquam illum iusto
+              commodi, deserunt accusantium labore. Repellendus?</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4  col-md-4  col-sm-12">
+          <div class="card m-2">
+            <img src="assets/img/recipe-card-2.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5>TIRAMISÚ</h5>
+              <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur illo odio eum a nihil
+                vitae aliquam nostrum in itaque eos dolore pariatur, ipsa eius. Pariatur saepe inventore adipisci!
+                Quaerat, accusamus!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4  col-md-4  col-sm-12">
+          <div class="card m-2">
+            <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5>PLATEADA</h5>
+              <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur doloribus optio
+                commodi
+                adipisci laudantium itaque voluptas, autem reprehenderit officia, ipsa explicabo possimus magnam velit,
+                dignissimos facere blanditiis maxime. Aliquid, totam!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="p-3 mb-2 bg-danger text-white text-center">
+      <div class="container">
+        <h4>SUSCRÍBETE EN NUESTRO NEWSLETTER</h4>
+        <p>y obtén las mejores recetas que tenemos en <span class="logo">Ricomida</span></p>
+        <button type="button" class="btn btn-outline-light">Empezar</button>
+      </div>
+      </div>
+  </div>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

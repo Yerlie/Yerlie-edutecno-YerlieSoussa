@@ -1,0 +1,57 @@
+body, *{
+  font-family: 'Roboto';
+}
+
+
+.navbar {
+  text-align: left;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.card img {
+    width: 100%;
+}
+
+.verde{
+    background-color: #28a745;
+    color:white;
+  
+}
+p{
+  font-weight: 300;
+  opacity: 0.4;
+}
+
+form{
+
+  background-color: #28A745;
+}
+
+span{
+  font-size: 16px;
+}
+ .color_numero{
+
+color:#28a745;
+font-size: 20px;
+font-weight: bolder;
+}  
+
+h5{
+  font-size: 23px;
+}
+
+p{
+  font-size: 16px;
+}
+
+.p_direccion{
+  font-size:13px;
+}
+
+
+
+

@@ -1,0 +1,15 @@
+
+.quienes_somos{
+    background-color: black;
+    /* font-weight: bolder; */
+    color: white;
+}
+
+i{
+    margin-left: 45%;
+}
+
+.linea{
+    border: 1px solid rgb(29, 136, 179);
+
+}
