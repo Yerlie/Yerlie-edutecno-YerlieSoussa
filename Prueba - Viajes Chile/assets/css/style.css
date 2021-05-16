@@ -1,8 +1,6 @@
 
-.quienes_somos{
+body{
     background-color: black;
-    /* font-weight: bolder; */
-    color: white;
 }
 
 i{
@@ -13,3 +11,4 @@ i{
     border: 1px solid rgb(29, 136, 179);
 
 }
+

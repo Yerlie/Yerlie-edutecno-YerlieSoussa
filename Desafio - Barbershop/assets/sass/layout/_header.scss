@@ -1,0 +1,30 @@
+.header {
+  background-color: black;
+  padding: 16px;
+  text-align: right;
+}
+
+.navigation {
+  padding: 0 104px;
+}
+
+.header__logo {
+  padding-top: 8px;
+  width: 78px;
+  float: left;
+}
+
+.navigation__list {
+}
+
+.navegation__item {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 6px;
+  display: inline-block;
+}
+
+.navegation__enlace {
+  text-decoration: none;
+  color: white;
+}

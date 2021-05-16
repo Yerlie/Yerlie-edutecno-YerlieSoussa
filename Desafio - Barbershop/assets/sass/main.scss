@@ -1,0 +1,26 @@
+// main.scss # Manifest File
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+@import 'base/reset';
+@import 'base/typography';
+
+
+@import 'layout/main-section';
+@import 'layout/header';
+@import 'layout/footer';
+
+
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+
+@import 'pages/home';
+@import 'pages/contact';
+
+@import 'themes/theme.scss';
+@import 'themes/admin';
+
