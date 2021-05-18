@@ -1,6 +1,6 @@
 .header {
-  background-color: black;
-  padding: 16px;
+  background-color: $FuzzyWuzzy;
+  padding: $medium;
   text-align: right;
 }
 
@@ -18,13 +18,13 @@
 }
 
 .navegation__item {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: $roboto;
+  font-size: $medium;
   padding: 6px;
   display: inline-block;
 }
 
 .navegation__enlace {
   text-decoration: none;
-  color: white;
+  color: $White;
 }

@@ -1,6 +1,20 @@
 .autor__enlace{
 
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-family: $roboto;
+    font-size: $medium;
+        a:hover {
+            color: $Raisinblack;
+        }
+}
+//autor__enlace el hover no me salió NESTING
+
+
+.contenido__boton{
+    &:hover {
+        background-color:$Colornose;
+        
+        }
 }
 
+
+//tampoco me resultó el &  ampersand
