@@ -1,0 +1,14 @@
+.container {
+  margin: 0px;
+  width: 219px;
+  height: 257px;
+}
+.f1 {
+  position: absolute;
+}
+.f2 {
+  position: relative;
+  width: 55px;
+  right: -152px;
+  bottom: -149px;
+}
