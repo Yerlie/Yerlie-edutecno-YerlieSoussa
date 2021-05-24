@@ -1,0 +1,166 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Old Standard TT', Arial;
+}
+
+body {
+	margin: 0px;
+}
+
+.navigation__logo {
+	background-color: #0c0910;
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+}
+
+.navigation__paragraph {
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Old Standard TT', Arial;
+	font-weight: 700;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	padding: 10px 20px;
+}
+
+.navigation__list {
+	margin-top: 32px;
+	float: right;
+}
+
+.navigation__item {
+	display: inline-block;
+}
+
+.navigation__item .navigation__enlace {
+	list-style: none;
+	text-decoration: none;
+	color: #0c0910;
+	font-family: 'Raleway', Arial;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 15px;
+}
+
+.navigation__icon {
+	float: right;
+	padding: 32px;
+	display: none;
+	cursor: pointer;
+}
+
+.main-section {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: stretch;
+}
+
+.main-section__photo {
+	order: 1;
+	flex-grow: 1;
+	width: 67%;
+	background: url(../img/imagen1.png) no-repeat top center/cover;
+}
+
+.main-left {
+	order: 0;
+	flex-grow: 1;
+	width: 33%;
+}
+
+.main-section__img {
+	width: 100%;
+}
+
+.primary {
+	padding: 32px;
+}
+
+.primary__title {
+	font-size: 50px;
+}
+
+.primary__paragraph {
+	color: #646266;
+	font-family: 'Raleway', Arial;
+}
+
+.newsletter {
+	padding: 32px;
+	background-color: #0c0910;
+	width: calc(100% - 130px);
+}
+
+.newsletter__title {
+	color: #fff;
+}
+
+.newsletter__paragraph {
+	color: #fff;
+	margin: 0;
+}
+
+.newsletter__subscription {
+	transform: rotate(90deg);
+	font-family: 'Old Standard TT', Arial;
+	font-size: 20px;
+	font-weight: 700;
+	padding: 20px;
+	background: white;
+	width: 180px;
+	text-align: center;
+	float: right;
+	position: relative;
+	right: -176px;
+	top: 15px;
+}
+
+.primary__button {
+	font-family: 'Raleway', Arial;
+	font-size: 14px;
+	background-color: #fff;
+	font-weight: 700;
+	margin: 15px 0px;
+	padding: 12px;
+}
+
+.newsletter__input {
+	color: #0c0910;
+	font-size: 12px;
+	background-color: #fff;
+	padding: 8px;
+	width: 80%;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 1024px) {
+	.main-section {
+		flex-flow: column nowrap;
+	}
+	.main-section div {
+		width: 100%;
+	}
+	.main-section__photo {
+		order: 0;
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.navigation__list {
+		display: none;
+	}
+	.main-section__photo {
+		height: 200px;
+	}
+	.navigation__icon {
+		display: block;
+	}
+}
