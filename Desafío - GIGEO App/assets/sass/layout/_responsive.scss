@@ -1,0 +1,36 @@
+@media (min-width: 576px) { 
+     .container {
+       max-width:  570px;  
+
+     }
+ }
+
+ @media (max-width: 576px) { 
+    .boton-desaparece{
+        display:none;
+    }
+    .row__profile{
+        text-align:center;
+    }
+    .row__img{
+        max-width: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}

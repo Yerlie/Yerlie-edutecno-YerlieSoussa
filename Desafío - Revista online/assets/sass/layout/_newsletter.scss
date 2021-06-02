@@ -1,0 +1,22 @@
+.newsletter {
+	background: $color-main;
+	text-align: center;
+	padding: 32px;
+}
+
+.newsletter h2 {
+	font-size: $h1-texto-size;
+	padding: 16px;
+}
+
+.newsletter p {
+	padding: 16px;
+}
+
+.newsletter button {
+	background: $color-boton;
+	padding: 3px;
+	outline: none;
+	border: 1px solid gray;
+	cursor: pointer;
+}

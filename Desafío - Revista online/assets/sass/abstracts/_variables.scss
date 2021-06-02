@@ -1,0 +1,37 @@
+// Color Scheme
+$color-fondo: #ffffff;
+$color-main: #f2f4f5;
+$color-tags: steelblue;
+$color-texto: #0c0910;
+$color-boton: coral;
+
+//Font Family
+$fuente-estandar: monospace;
+
+// Font Sizes
+$h1-texto-size: 28px; //titulos Zona Derecha
+$h2-texto-size: 22px; //Titulos Noticias
+$h2-texto-size-large: 18px; //Titulos Noticias Tamaño large
+$h4-texto-size: 18px; //Subtitulos Zona Derecha
+$general-texto-size: 16px; //Texto general
+$logo-texto-size: 32px; //Texto Logo
+$menu-texto-size: 18px; //Texto menu
+$tag-texto-size: 18px; //Texto Zona Tags
+
+// Page Sizes (copiados desde https://getbootstrap.com/docs/4.3/layout/overview/)
+$breakpoints: (
+	'small': (
+		min-width: 576px
+	),
+	'medium': (
+		min-width: 768px
+	),
+	'large': (
+		min-width: 992px
+	),
+	'huge': (
+		min-width: 1200px
+	)
+);
+
+$ancho-maximo: 1440px;

@@ -1,0 +1,19 @@
+.contenido {
+	background: $color-main;
+	border-top: 1px solid black;
+	padding: 8px;
+}
+
+.noticia h2 {
+	font-size: $h2-texto-size-large;
+	padding: 8px;
+
+	@include respond-to('large') {
+		font-size: $h2-texto-size;
+	}
+}
+
+.noticia .cuerpo img {
+	width: 100%;
+	aspect-ratio: 8 / 6;
+}

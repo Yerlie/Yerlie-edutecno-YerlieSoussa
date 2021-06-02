@@ -1,0 +1,17 @@
+//construir con sass --watch assets\sass\main.scss:assets\css\main.css
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/main-section';
+@import 'layout/left-side';
+@import 'layout/newsletter';
+@import 'layout/footer';
+
+@import 'components/grid';
+@import 'components/inputs';
+@import 'components/buttons';

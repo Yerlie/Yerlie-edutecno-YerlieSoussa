@@ -1,0 +1,34 @@
+.listado-derecho img {
+	width: 100%;
+	aspect-ratio: 8 / 6;
+}
+
+.listado-derecho h1 {
+	font-size: $h1-texto-size;
+	padding: 8px 0;
+}
+
+.listado-derecho h4 {
+	font-size: $h4-texto-size;
+	padding: 8px 0;
+	font-weight: normal;
+}
+
+.listado-derecho .tags {
+	border-bottom: 1px solid black;
+	padding-bottom: 16px;
+}
+
+.listado-derecho .cabecera-listado {
+	border-bottom: 1px solid black;
+	padding-bottom: 16px;
+}
+
+.tags li {
+	display: block;
+	background: $color-tags;
+	color: white;
+	padding: 4px;
+	margin: 2px;
+	cursor: pointer;
+}
