@@ -1,0 +1,29 @@
+//oculta y muestra los items del menu al achicarse
+@media screen and (max-width: 400px) {
+	.nav-toggle {
+		display: table-cell;
+	}
+	.nav-link {
+		display: none;
+	}
+}
+
+//colapsa el main al achicarse
+@media screen and (max-width: 640px) {
+	.row {
+		display: block;
+	}
+}
+
+//colapsa el footer al achicarse
+@media screen and (max-width: 840px) {
+	footer {
+		display: block !important;
+		p,
+		form {
+			padding: 0 !important;
+			margin: 4px auto !important;
+			text-align: center !important;
+		}
+	}
+}

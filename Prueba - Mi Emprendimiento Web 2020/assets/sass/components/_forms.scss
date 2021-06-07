@@ -1,0 +1,10 @@
+form {
+	display: table;
+}
+form * {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+	padding: 4px;
+}

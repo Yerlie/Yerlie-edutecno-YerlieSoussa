@@ -1,0 +1,30 @@
+.diple-izquierda , .diple-derecha , .slash{
+
+    -webkit-transform-origin: center;
+    -webkit-animation: 3s transladar infinite linear;
+
+    
+  }
+  @-webkit-keyframes transladar{
+    0%{ 
+      -webkit-transform: translateX(0px,200px);
+    }
+
+    50%{
+      -webkit-transform:translateX(200px);
+    }
+  }
+  
+  .color-rueda , .centro-rueda {
+    
+    -webkit-transform-origin: center;
+    -webkit-animation: 2s giro infinite linear;
+    transform-box: fill-box;
+    
+  }
+  @-webkit-keyframes giro{
+    0%{ -webkit-transform: rotate(-360deg);
+      
+      
+    }
+  }

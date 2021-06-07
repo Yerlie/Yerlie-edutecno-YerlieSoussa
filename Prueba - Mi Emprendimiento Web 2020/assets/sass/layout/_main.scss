@@ -1,0 +1,52 @@
+.row {
+	display: flex;
+}
+
+.column {
+	border: 1px solid $charcoal;
+	padding: 16px;
+}
+
+.content {
+	border: 1px solid $charcoal;
+	padding: 16px;
+}
+
+.section__ordered-list {
+	list-style-type: circle;
+	background-color: white;
+}
+
+.titulo {
+	background-color: $charcoal;
+	text-align: center;
+	color: $white;
+	font-family: $poppins;
+}
+
+li {
+	color: rgb(204, 10, 204);
+}
+
+.info{
+	display:flex;
+	flex-direction: column;
+	flex-wrap:nowrap; 
+	align-items: center;
+
+}
+
+.info__titulo{
+
+	font-size:$medium;
+	font-family: $poppins;
+}
+
+.content__titulo1, content.content__titulo2{
+
+	font-family: $poppins;
+}
+.contenedor-svg{
+	text-align:center;
+}
+
