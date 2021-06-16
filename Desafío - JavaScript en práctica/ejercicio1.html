@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 1</title>
+  </head>
+
+  <body>
+    <div>
+      <div style="width: 40%; margin: 0 auto">
+        <h2>Escríbenos !!!</h2>
+        <div class="resultado" style="color: green; font-style: italic"></div>
+        <form id="formulario">
+          <div>
+            <div style="display: flex; flex-direction: column">
+              <label> Nombre completo </label>
+              <input id="nombre" type="text" />
+              <p class="errorNombre" style="color: red; font-style: italic"></p>
+            </div>
+            <div style="display: flex; flex-direction: column">
+              <label> Asunto </label>
+              <input id="asunto" type="text" />
+              <p class="errorAsunto" style="color: red; font-style: italic"></p>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column">
+            <label> Mensaje </label>
+            <textarea id="mensaje"></textarea>
+            <p class="errorMensaje" style="color: red; font-style: italic"></p>
+          </div>
+          <div>
+            <button id="botton" type="submit">Envíar mensaje</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+            // Escríbe aquí tu código
+
+            function validar(event){
+      let nombre = document.getElementById("nombre");
+      let asunto = document.getElementById("asunto");
+      let mensaje = document.getElementById("mensaje");
+      let patron = /[a-zA-Z]/gim;
+  
+      document.querySelector(".errorNombre").innerHTML ="";
+      document.querySelector(".errorAsunto").innerHTML ="";
+      document.querySelector(".errorMensaje").innerHTML ="";
+      if (!patron.test(nombre.value)) {
+          document.querySelector(".errorNombre").innerHTML = `El nombre es requerido.`;
+          event.preventDefault();
+       } else if (!patron.test(asunto.value)) {
+          document.querySelector(".errorAsunto").innerHTML = `El asunto es requerido.`;
+          event.preventDefault();
+       } else if (!patron.test(mensaje.value)) {
+          document.querySelector(".errorMensaje").innerHTML = `El mensaje es requerido.`;
+          event.preventDefault();
+       } else {
+        document.querySelector(".resultado").innerHTML = "Mensaje enviado con éxito";
+        event.preventDefault();
+       }
+
+      };
+            let form = document.getElementById("formulario");
+            form.addEventListener("submit", validar);
+    </script>
+  </body>
+</html>

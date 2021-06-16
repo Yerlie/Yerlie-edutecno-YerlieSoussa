@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 3</title>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <h2>Resultado: <span id="resultado"></span></h2>
+        <div>
+          <div>
+            <div>
+              <label for="">Valor 1</label>
+              <input id="valor1" type="text" />
+            </div>
+            <div>
+              <label for="">Valor 2</label>
+              <input id="valor2" type="text" />
+            </div>
+            <div style="display: flex">
+              <button id="btn-sumar" type="button">Sumar</button>
+              <button id="btn-restar" type="button">Restar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Escríbe aquí tu código
+      //     Dar la funcionalidad de sumar y restar a la calculadora, mostrando el resultado en el
+      // elemento con clase resultado. Si el resultado de la resta entrega un número negativo
+      // debes mostrar un 0.
+
+      let botonSumar = document.getElementById("btn-sumar");
+      let botonRestar = document.getElementById("btn-restar");
+      let numero1 = document.getElementById("valor1");
+      let numero2 = document.getElementById("valor2");
+      let spanResultado = document.getElementById("resultado");
+
+      function sumar() {
+        let resultado = parseInt(numero1.value) + parseInt(numero2.value);
+        if (resultado < 0) {
+          resultado = 0;
+        }
+        spanResultado.innerHTML = "resultado de la suma es " + resultado;
+      }
+
+      function restar() {
+        let resultado = parseInt(numero1.value) - parseInt(numero2.value);
+        if (resultado < 0) {
+          resultado = 0;
+        }
+        spanResultado.innerHTML = "resultado de la resta es " + resultado;
+      }
+
+      botonSumar.addEventListener("click", sumar);
+      botonRestar.addEventListener("click", restar);
+    </script>
+  </body>
+</html>
