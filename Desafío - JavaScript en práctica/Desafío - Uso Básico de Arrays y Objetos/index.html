@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Centro Médico Ñuñoa</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid green;
+        border-collapse: collapse;
+      }
+      th {
+        background-color: gainsboro;
+        padding: 5px 30px;
+      }
+      td {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+      <h3>RADIOLOGÍA</h3>
+    <table id="radiologia"></table>
+    <h3>TRAUMATOLOGÍA</h3>
+    <table id="traumatologia"></table>
+    <h3>DENTAL</h3>
+    <table id="dental"></table>
+    <script>
+      document.write("<p>Estadísticas Centro Médico Ñuñoa</p>");
+      let radiologia = [
+        {
+          hora: "11:00",
+          especialista: "IGNACIO SCHULZ",
+          paciente: "FRANCISCA ROJAS",
+          rut: "9878782-1",
+          prevision: "FONASA",
+        },
+        {
+          hora: "11:30",
+          especialista: "FEDERICO SUBERCASEAUX",
+          paciente: "PAMELA ESTRADA",
+          rut: "15345241-3",
+          prevision: "ISAPRE",
+        },
+        {
+          hora: "15:00",
+          especialista: "FERNANDO WURTHZ",
+          paciente: "ARMANDO LUNA",
+          rut: "16445345-9",
+          prevision: "ISAPRE",
+        },
+        {
+          hora: "15:30",
+          especialista: "ANA MARIA GODOY",
+          paciente: "MANUEL GODOY",
+          rut: "17666419-0",
+          prevision: "FONASA",
+        },
+        {
+          hora: "16:00",
+          especialista: "PATRICIA SUAZO",
+          paciente: "RAMON ULLOA",
+          rut: "14989389-K",
+          prevision: "FONASA",
+        },
+      ];
+      let textoRadiologia = "<tr><th>HORA</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>RUT</th><th>PREVISIÓN</th></tr>";
+      for (let i = 0; i < radiologia.length; i++) {
+        textoRadiologia += `<tr>
+        <td>${radiologia[i].hora}</td>
+        <td>${radiologia[i].especialista}</td>
+        <td>${radiologia[i].paciente}</td>
+        <td>${radiologia[i].rut}</td>
+        <td>${radiologia[i].prevision}</td>
+        </tr>`;
+      }
+      document.getElementById("radiologia").innerHTML = textoRadiologia;
+
+
+      let traumatologia = [
+        {
+          hora: "8:00",
+          especialista: "MARIA PAZ ALTUZARRA",
+          paciente: "PAULA SANCHEZ",
+          rut: "15554774-5",
+          prevision: "FONASA",
+        },
+        {
+          hora: "10:00",
+          especialista: "RAUL ARAYA",
+          paciente: "ANGÉLICA NAVAS",
+          rut: "15444147-9",
+          prevision: "ISAPRE",
+        },
+        {
+          hora: "10:30",
+          especialista: "MARIA ARRIAGADA",
+          paciente: "ANA KLAPP",
+          rut: "17879423-9",
+          prevision: "ISAPRE",
+        },
+        {
+          hora: "11:00",
+          especialista: "ALEJANDRO BADILLA",
+          paciente: "FELIPE MARDONES",
+          rut: "1547423-6",
+          prevision: "ISAPRE",
+        },
+        {
+          hora: "11:30",
+          especialista: "CECILIA BUDNIK",
+          paciente: "DIEGO MARRE",
+          rut: "16554741-K",
+          prevision: "FONASA",
+        },
+        {
+          hora: "12:00",
+          especialista: "ARTURO CAVAGNARO",
+          paciente: "CECILIA MENDEZ",
+          rut: "9747535-8",
+          prevision: "ISAPRE",
+        },
+        {
+          hora: "12:30",
+          especialista: "ANDRES KANACRI",
+          paciente: "MARCIAL SUAZO",
+          rut: "11254785-5",
+          prevision: "ISAPRE",
+        },
+      ];
+
+      let textoTraumatologia = "<tr><th>HORA</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>RUT</th><th>PREVISIÓN</th></tr>";
+             for(let i = 0; i <traumatologia.length; i++){
+        textoTraumatologia += `<tr>
+        <td>${traumatologia[i].hora}</td>
+        <td>${traumatologia[i].especialista}</td>
+        <td>${traumatologia[i].paciente}</td>
+        <td>${traumatologia[i].rut}</td>
+        <td>${traumatologia[i].prevision}</td>
+        </tr>`;
+      }
+
+             document.getElementById("traumatologia").innerHTML = textoTraumatologia;
+
+             let dental = [
+        {
+          hora: "8:30",
+          especialista: "ANDREA ZUÑIGA",
+          paciente: "MARCELA RETAMAL",
+          rut: "11123425-6",
+          prevision: "ISAPRE",
+        },
+        {
+          hora: "11:00",
+          especialista: "MARIA PIA ZAÑARTU",
+          paciente: "ANGEL MUÑOZ",
+          rut: "9878789-2",
+          prevision: "ISAPRE",
+        },
+        {
+          hora: "11:30",
+          especialista: "SCARLETT WITTING",
+          paciente: "MARIO KAST",
+          rut: "7998789-5",
+          prevision: "FONASA",
+        },
+        {
+          hora: "13:00",
+          especialista: "FRANCISCO VON TEUBER",
+          paciente: "KARIN FERNANDEZ",
+          rut: "18887662-K",
+          prevision: "FONASA",
+        },
+        {
+          hora: "13:30",
+          especialista: "EDUARDO VIÑUELA",
+          paciente: "HUGO SANCHEZ",
+          rut: "17665461-4",
+          prevision: "FONASA",
+        },
+        {
+          hora: "14:00",
+          especialista: "RAQUEL VILLASECA",
+          paciente: "ANA SEPULVEDA",
+          rut: "14441281-0",
+          prevision: "ISAPRE",
+        },
+      ];
+
+      let textoDental = "<tr><th>HORA</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>RUT</th><th>PREVISIÓN</th></tr>";
+             for(let i = 0; i <dental.length; i++){
+        textoDental += `<tr>
+        <td>${dental[i].hora}</td>
+        <td>${dental[i].especialista}</td>
+        <td>${dental[i].paciente}</td>
+        <td>${dental[i].rut}</td>
+        <td>${dental[i].prevision}</td>
+        </tr>`;
+      }
+             document.getElementById("dental").innerHTML = textoDental;
+    
+     let resultado =[
+            radiologia [0].especialista + "|" + radiologia [0].prevision,
+            radiologia [radiologia.length-1].especialista + "|" + radiologia [radiologia.length-1].prevision,
+            traumatologia [0].especialista + "|" + traumatologia [0].prevision,
+            traumatologia [traumatologia.length-1].especialista + "|" + traumatologia [traumatologia.length-1].prevision,
+            dental [0].especialista + "|" + dental [0].prevision,
+            dental [dental.length-1].especialista + "|" + dental [dental.length-1].prevision,
+     ];
+
+           
+
+     console.log (resultado),
+
+            document.write("Radiología <br>");
+             document.write("Primera atención: "+resultado[0]+ "|Ultima atención:"+resultado[1]+ "<br>");
+             document.write("Traumatología <br>");
+             document.write("Primera atención: "+resultado [2]+ "|Ultima atención:"+resultado[3]+ "<br>");
+             document.write("Dental <br>");
+             document.write("Primera atención: "+resultado[4]+ "|Ultima atención:"+resultado[5]+ "<br>");
+           
+
+    </script>
+  </body>
+</html>
