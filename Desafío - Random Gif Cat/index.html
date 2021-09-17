@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío - Random Gif Cat</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <h1 class="celeste">Random Gif Cat</h1>
+      <div class="rosado">
+        Título:
+        <input v-model="titulo" />
+        <br />
+        Filtro:
+        <select v-model="filtro">
+          <option>blur</option>
+          <option>mono</option>
+          <option>sepia</option>
+          <option>negative</option>
+          <option>paint</option>
+          <option>pixel</option></select
+        ><br />
+        Color:
+        <select v-model="color" @change="updateColor">
+          <option>red</option>
+          <option>green</option>
+          <option>blue</option>
+        </select>
+        <div id="circulo" :style="estiloCirculo"></div>
+        <br />
+        Tamaño:
+        <input v-model="tamaño" />
+      </div>
+      <div class="celeste">
+        <button @click="obtener">Obtener mi gato</button><br />
+        <img :src="url" v-if="mostrar" />
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          url: "",
+          titulo: "",
+          filtro: "",
+          color: "",
+          tamaño: "",
+          mostrar: false,
+          estiloCirculo: {
+            background: "blue",
+          },
+        },
+        methods: {
+          updateColor() {
+            this.estiloCirculo = {
+              background: this.color,
+            };
+          },
+          obtener() {
+            this.url = "https://cataas.com/cat/says/" + this.titulo.replaceAll("\?", "") + "?width=" + this.tamaño + "&color=" + this.color + "&filter=" + this.filtro + "&tiempo=" + Date.now();
+            this.mostrar = true;
+          },
+        },
+      });
+    </script>
+    <style>
+        h1{
+            margin: 0;
+        }
+      #app {
+        text-align: center;
+      }
+      .celeste {
+        background-color: rgb(30, 195, 224);
+        padding: 40px;
+      }
+      .rosado {
+        padding: 40px;
+        background: rgb(194, 109, 109);
+      }
+      #circulo {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: black;
+        display: inline-block;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Iniciando con VueJS</title>
+<style>
+    body {
+        background: url(https://rickandmortypod.com/wp-content/uploads/2018/11/cropped-RM_page-header_background1-3.png);
+        margin: 20px
+    }
+
+    div {
+        padding: 10px;
+    }
+
+    label {
+        color: green;
+        font-style: times;
+        font-size: 24px;
+        position: relative;
+        top: -40px;
+        left: 20px;
+        font-weight: bold;
+    }
+
+    img {
+        width: 100px;
+        border-radius: 100%;
+    }
+</style>
+</head>
+<body>
+    <div id='app'>
+        <lista v-for='item in array' :item="item"></lista>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        Vue.component('lista', {
+            props: ['item'],
+            template: `
+                <div>
+                    <img :src="item.src">
+                    <label>{{item.nombre}}</label>
+                </div>
+            `
+        })
+        new Vue({
+            el: '#app',
+            data: {
+                array: [
+                    { nombre: "Rick Sanchez", src: "https://rickandmortyapi.com/api/character/avatar/1.jpeg" },
+                    { nombre: "Morty Smith", src: "https://rickandmortyapi.com/api/character/avatar/2.jpeg" },
+                ]
+            }
+        })
+    </script>
+</body>
+</html>
+</script>
